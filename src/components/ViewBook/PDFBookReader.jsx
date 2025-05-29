@@ -1,12 +1,17 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, ZoomIn, ZoomOut, Loader2 } from 'lucide-react';
-import { getDocument, GlobalWorkerOptions } from 'pdfjs-dist';
+//import { getDocument, GlobalWorkerOptions } from 'pdfjs-dist';
 import { check_user_access } from '../../services/utils';
 import { fetchBook } from '../../services/api';
+import { GlobalWorkerOptions, getDocument } from 'pdfjs-dist';
+
+// Use CDN URL for worker script
+GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@5.2.133/build/pdf.worker.min.js`;
+
 
 // ✅ Use unpkg CDN with different version that supports dynamic imports better
-GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@5.2.133/build/pdf.worker.min.js`;
+//GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@5.2.133/build/pdf.worker.min.js`;
 
 const PDFBookReader = () => {
   const navigate = useNavigate();
