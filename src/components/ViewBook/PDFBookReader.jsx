@@ -6,7 +6,7 @@ import { check_user_access } from '../../services/utils';
 import { fetchBook } from '../../services/api';
 
 // ✅ Use unpkg CDN with different version that supports dynamic imports better
-GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`;
+GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@5.2.133/build/pdf.worker.min.js`;
 
 const PDFBookReader = () => {
   const navigate = useNavigate();
