@@ -1,0 +1,16 @@
+.book{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 8px;
+    height: 285px;
+    width: fit-content;
+    align-items: center;
+    gap: 10px;
+}
+
+.the-fricking-book{
+    max-width: 180px;
+    max-height: 180px;
+}

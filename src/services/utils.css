@@ -1,0 +1,23 @@
+.toast-message {
+    display: flex;
+    background: rgb(44, 44, 44);
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 2px 2px;
+    justify-content: center;
+    color: white;
+}
+
+.toast-mobile-message {
+    display: flex;
+    background: rgb(44, 44, 44);
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 2px 8px;
+    justify-content: center;
+    color: white;
+    max-width: 60%;
+    margin-bottom: 20px;
+}
